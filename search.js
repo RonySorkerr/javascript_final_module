@@ -10,7 +10,7 @@ const array = [
     {id: 9, name: 'hp laptop', price: 1500},
     {id: 10, name: 'doel laptop', price: 1500},
     {id: 11, name: 'smart laptop', price: 1500},
-    {id: 12, name: 'one plus phone', price: 1500},
+    {id: 12, name: 'one plus Phone', price: 1500},
 
 ]
 
@@ -26,7 +26,7 @@ function matchedProducts(array , search ){
     const matched = [];
 
     for(const item of array){
-        if(item.name.includes(search)){
+        if(item.name.toLowerCase().includes(search.toLowerCase())){
             matched.push(item);
         }
     }
