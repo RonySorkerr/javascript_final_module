@@ -14,30 +14,18 @@ const array = [
 
 ]
 
-// looping the array to get every single element
 
-// for(item of array){
-//     console.log(item);
-// }
 
-// making a function for searching every product
+function matchedPrice (array, searchedPrice){
 
-function matchedProducts(array , search ){
-    const matched = [];
-
-    for(const item of array){
-        if(item.name.toLowerCase().includes(search.toLowerCase())){
-            matched.push(item);
+    const matchedPrice = [];
+    for(item of array){
+        if(item.name.toLowerCase().includes(searchedPrice.toLowerCase())){
+            matchedPrice.push(item);
         }
     }
-    return matched;
+    return matchedPrice;
 }
 
-const result = matchedProducts(array, 'LAPtop');
-console.log(result);
-
-
-
-
-// const input = ; 
-// console.log(array(input));
+const input = matchedPrice(array, 'laptop');
+console.log(input);
